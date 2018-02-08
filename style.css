@@ -55,18 +55,31 @@ body {
 	margin: 0;
 }
 
-.column-container .column .btn-delete {
+
+  .btn-delete {
 	position: absolute;
-	top: 10px;
-	right: 10px;
-	color: #fff;
-	background-color: #b59a50;
-	border: 1px solid white;
+	top: 5px;
+	right: 5px;
+	color: black;
+	background-color: #AD9552;
+	border: none;
 	cursor: pointer;
   }
 
 
 /*card*/
+
+
+.btn-card-delete {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: black;
+	background-color: #D1CCBC;
+	border: none;
+	cursor: pointer;
+  }
+
   .column-container .column .add-card {
 	color: black;
 	background-color: #f3eddb;
@@ -77,8 +90,8 @@ body {
 	color: #20222e;
 }
 
-
 .column-container .column-card-list li {
+	position: relative;
 	list-style-type: none;
 	background-color: #f3eddb;
 	margin: 25px;
@@ -88,5 +101,15 @@ body {
 	color: #20222e;
 	font-size: 18px;
 	padding: 15px;
+	cursor: pointer;
   }
 
+.column-card-list {
+	padding: 0;
+	min-height: 200px;
+}
+
+.card-placeholder {
+	background: none;
+	border: 1px dotted #f3eddb ;
+}

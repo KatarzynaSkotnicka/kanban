@@ -69,7 +69,7 @@ function Card(description) {
     // CREATING THE BLOCKS
     var $card = $('<li>').addClass('card');
     var $cardDescription = $('<p>').addClass('card-description').text(self.description);
-    var $cardDelete = $('<button>').addClass('btn-delete').text('x');
+    var $cardDelete = $('<button>').addClass('btn-card-delete').text('x');
 
     // BINDING TO CLICK EVENT
     $cardDelete.click(function(){
@@ -126,8 +126,8 @@ board.addColumn(doingColumn);
 board.addColumn(doneColumn);
 
 // CREATING CARDS
-// var card1 = new Card('New task');
-// var card2 = new Card('Create kanban boards');
+var card1 = new Card('New task');
+var card2 = new Card('Create kanban boards');
 
 // ADDING CARDS TO COLUMNS
 todoColumn.addCard(card1);
